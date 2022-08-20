@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Momentum",
+    "description": "start page",
+    "version": "1.0",
+    "author": "olegpl1993",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "action": {
+        "default_title": "Momentum",
+        "default_icon": "img/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "bundle.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
