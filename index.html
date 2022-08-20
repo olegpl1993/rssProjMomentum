@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <title>momentum</title>
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <header class="header">
+            <div class="player">
+                <div class="player__control">
+                    <button class="player__play-prev"></button>
+                    <button class="player__play"></button>
+                    <button class="player__play-next"></button>
+                </div>
+                <div class="player__trackName"></div>
+                <div class="player__duration">
+                    <div class="player__progress"></div>
+                </div>
+                <div class="player__progressTime"></div>
+                <div class="player__row">
+                    <div class="player__volume"></div>
+                    <div class="player__volumeLevel">
+                        <div class="player__volumeChange"></div>
+                    </div>
+                </div>
+                <ul class="player__list"></ul>
+            </div>
+            <div class="wether">
+                <input type="text" class="wether__city" value="Minsk">
+                <div class="wether__row">
+                    <i class="wether__icon owf"></i>
+                    <div class="wether__temperature"></div>
+                </div>
+                <div class="wether__description"></div>
+                <div class="wether__row">
+                    <div class="wether__wind"></div>
+                    <div class="wether__wet"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section1">
+                <button class="leftArrow"></button>
+                <div class="center">
+                    <div class="center__time"></div>
+                    <div class="center__date"></div>
+                    <div class="center__row">
+                        <div class="center__hi"></div>
+                        <input class="center__name" type="text" placeholder="your name">
+                    </div>
+                </div>
+                <button class="rightArrow"></button>
+            </section>
+            <section class="section2">
+                <div class="quote">
+                    <button class="quote__update"></button>
+                    <div class="quote__text"></div>
+                    <div class="quote__author"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="optionBTN">Options</div>
+            <div class="optionBox">
+                <div class="optionBox__col">
+                    <div class="optionBox__row">
+                        <p class="strEnglish">English</p><input type="radio" name="langSwitch" id="langSwitchE" checked>
+                        <p class="strRussian">Russian</p><input type="radio" name="langSwitch" id="langSwitchR">
+                    </div>
+                    <div class="optionBox__rowLine"></div>
+                    <div class="optionBox__row">
+                        <p>GitHub</p><input type="radio" name="bgSwitch" id="bgSwitchG" checked>
+                    </div>
+                    <div class="optionBox__row">
+                        <p>Unsplash</p><input type="radio" name="bgSwitch" id="bgSwitchU">
+                        <p>Flickr</p><input type="radio" name="bgSwitch" id="bgSwitchF">
+                    </div>
+                    <div class="optionBox__row">
+                        <input class="optionBox__searchBG" type="text" placeholder="search image">
+                        <button class="optionBox__searchBTN">Search</button>
+                    </div>
+                    <div class="optionBox__rowLine"></div>
+                    <div class="optionBox__row">
+                        <p class="strTime">Time</p><input type="checkbox" name="time" id="time">
+                    </div>
+                    <div class="optionBox__row">
+                        <p class="strDate">Date</p><input type="checkbox" name="date" id="date">
+                    </div>
+                    <div class="optionBox__row">
+                        <p class="strGreeting">Greeting</p><input type="checkbox" name="greeting" id="greeting">
+                    </div>
+                    <div class="optionBox__row">
+                        <p class="strQuote">Quote</p><input type="checkbox" name="quote" id="quote">
+                    </div>
+                    <div class="optionBox__row">
+                        <p class="strWeather">Weather</p><input type="checkbox" name="weather" id="weather">
+                    </div>
+                    <div class="optionBox__row">
+                        <p class="strAudio">Player</p><input type="checkbox" name="audio" id="audio">
+                    </div>
+                    <div class="optionBox__row">
+                        <p class="strTodolist">Todolist</p><input type="checkbox" name="todolist" id="todolist">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__center">
+                <a href="https://github.com/olegpl1993"><img class="footer__gh" src="./img/GitHub_Logo.png"
+                        alt="GitHub"></a>
+                <p class="footer__created">2022</p>
+                <a href="https://rs.school/js/"><img class="footer__rs" src="./svg/rs_school_js.svg"
+                        alt="rs_school"></a>
+            </div>
+            <div class="todoBTN">TODOlist</div>
+            <div class="todoBox">
+                <div class="todoBox__col">
+                    <ul class="todoBox__list"></ul>
+                    <div class="todoBox__row">
+                        <input class="todoBox__inputTodo" type="text" placeholder="new todo">
+                        <button class="todoBox__addBTN">+</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="bundle.js"></script>
+    <!-- <script type="module" src="js/script.js"></script> -->
+</body>
+</html>
